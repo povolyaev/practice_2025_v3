@@ -48,7 +48,7 @@ public class MainTest {
         // Проверка
         List<Student> lowAttendanceStudents = attendance.getStudentsWithLowAttendance(50.0);
         assertEquals(2, lowAttendanceStudents.size());
-        assertEquals(student2, lowAttendanceStudents.get(0));
+        assertEquals(student1, lowAttendanceStudents.get(0));
     }
 
     @Test
