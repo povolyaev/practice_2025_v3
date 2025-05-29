@@ -74,16 +74,19 @@ pipeline {
 
         stage('Deploy Artifact') {
             steps {
-                script {
-                    def targetDir = "C:\\artifacts\\${env.BRANCH_NAME}"
-                    bat """
-                        if not exist "${targetDir}" (
-                            mkdir "${targetDir}"
-                        )
-                        copy /Y "app\\target\\*.jar" "${targetDir}\\"
-                    """
-                }
-                archiveArtifacts artifacts: 'app\\target\\*.jar', fingerprint: true
+                    script {
+                        // Заменяем '/' на '-', чтобы имя каталога было корректным для Windows
+                        def branchName = env.BRANCH_NAME.replace('/', '-')
+                        def targetDir = "C:\\artifacts\\${branchName}"
+
+                        bat """
+                            if not exist "${targetDir}" (
+                                mkdir "${targetDir}"
+                            )
+                            copy /Y "app-module\\target\\*.jar" "${targetDir}\\"
+                        """
+                    }
+                    archiveArtifacts artifacts: 'app-module/target/*.jar', fingerprint: true
             }
         }
     }
