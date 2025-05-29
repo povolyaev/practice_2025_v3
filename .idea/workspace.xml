@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="216ce024-8d39-4edd-bd87-76a1705bcb3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-module/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-module/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app-module/src/test/java/org/example/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-module/src/test/java/org/example/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/main/java/org/example/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/main/java/org/example/Attendance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/main/java/org/example/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/main/java/org/example/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/main/java/org/example/Lecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/main/java/org/example/Lecture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/main/java/org/example/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/test/java/org/example/AttendanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/test/java/org/example/AttendanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/test/java/org/example/CourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/test/java/org/example/CourseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/test/java/org/example/LectureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/test/java/org/example/LectureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-module/src/test/java/org/example/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-module/src/test/java/org/example/StudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
