@@ -48,10 +48,15 @@ pipeline {
 
         stage('Code Coverage Report') {
             steps {
-                bat 'mvn jacoco:report'
-                jacoco execPattern: '**/target/jacoco.exec'
-                jacoco classPattern: '**/target/classes'
-                jacoco sourcePattern: '**/src/main/java'
+                // Запуск Maven для генерации отчета Jacoco
+                sh 'mvn jacoco:report'
+
+                // Вывод отчета покрытия в Jenkins UI (требуется плагин JaCoCo)
+                jacoco(
+                    execPattern: '**/target/jacoco.exec',
+                    classPattern: '**/target/classes',
+                    sourcePattern: '**/src/main/java'
+                )
             }
         }
 
