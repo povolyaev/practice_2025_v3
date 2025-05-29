@@ -49,7 +49,7 @@ pipeline {
         stage('Code Coverage Report') {
             steps {
                 // Запуск Maven для генерации отчета Jacoco
-                sh 'mvn jacoco:report'
+                bat 'mvn jacoco:report'
 
                 // Вывод отчета покрытия в Jenkins UI (требуется плагин JaCoCo)
                 jacoco(
