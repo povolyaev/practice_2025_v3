@@ -3,23 +3,23 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                script {
-                    def scmVars = checkout([
-                        $class: 'GitSCM',
-                        branches: [[name: env.BRANCH_NAME]],
-                        extensions: [
-                            [$class: 'LocalBranch', localBranch: env.BRANCH_NAME],
-                            [$class: 'CheckoutOption', timeout: 30]
-                        ],
-                        userRemoteConfigs: [[
-                            url: 'https://github.com/povolyaev/practice_2025_v3.git'
-                        ]]
-                    ])
-                    echo "Detected branch: ${env.BRANCH_NAME}"
+                    steps {
+                        script {
+                            def scmVars = checkout([
+                                $class: 'GitSCM',
+                                branches: [[name: '**']],
+                                extensions: [
+                                    [$class: 'LocalBranch', localBranch: '**']
+                                ],
+                                userRemoteConfigs: [[
+                                    url: 'https://github.com/povolyaev/practice_2025_v3.git'
+                                ]]
+                            ])
+                            env.BRANCH_NAME = scmVars.GIT_BRANCH.replace('origin/', '')
+                            echo "Detected branch: ${env.BRANCH_NAME}"
+                        }
+                    }
                 }
-            }
-        }
 
         stage('Build Code') {
             steps {
